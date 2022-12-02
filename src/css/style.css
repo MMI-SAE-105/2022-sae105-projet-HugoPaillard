@@ -1,4 +1,4 @@
-body{
+body {
     background-color: black;	
     background-attachment: fixed;
     background-size: cover;
@@ -14,6 +14,14 @@ pre {
     flex: center;
     
     }
+
+pre-article {
+    color: black;
+}
+
+pre-right {
+    color: white;
+}
 
 .logo{
     grid:left;
@@ -122,6 +130,5 @@ pre {
     color: white;
     font-size: auto;
 }
-
 
 
