@@ -33,7 +33,7 @@ pre-right {
     }
     
     
-._menu-open{
+.menu-open{
         grid:right;
         margin-top: 40px;
         margin-right: 0px;
@@ -61,12 +61,19 @@ pre-right {
 	font-size:110%;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
-    text-align: right;
+    
     
 }
 
+.txt-article {
+    float: right;
+    height: 166px;
+    width: auto;
+    margin-top: center;
+}
+
 .imagearticle {
-    text-align:left;
+    float:left;
     margin-top: -0.5px;
     margin-left: -0.5px;
     height: 167px;
@@ -88,6 +95,7 @@ pre-right {
     margin-right: -0.5px;
     height: 167px;
     max-width: 125px;
+    float: right
     
 }
 
