@@ -86,6 +86,10 @@ pre-clique {
     
 }
 
+.txtblanc {
+    color: white;
+}
+
 .footer {
 	background-color: black;
 	height: auto ;
@@ -135,5 +139,25 @@ pre-clique {
     width: 300px;
     height: auto;
 }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.haut-gauche {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.haut-droite {
+    float: right;
+    height: 50px;
+    width: 50px;
+}
+
+
+
 
 
