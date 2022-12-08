@@ -145,19 +145,39 @@ a {
     text-decoration: none;
 }
 
-.haut-gauche {
+.gauche {
     float: left;
     height: 50px;
     width: 50px;
 }
 
-.haut-droite {
+.droite {
     float: right;
     height: 50px;
     width: 50px;
 }
 
+.texte1 {
+    color: white;
+    font-size: 12px;
+}
 
+.cliquez {
+    color: white;
+    text-decoration: underline;
+}
 
+.image-article {
+    max-width: 357px;
+    height: auto;
+    float: center;
+}
 
+.titre {
+    text-align: center;
 
+}
+.glossaire {
+    color: white;
+    text-decoration: bold;
+}
