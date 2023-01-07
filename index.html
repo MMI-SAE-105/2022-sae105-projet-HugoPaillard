@@ -1,100 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="menuIsOpen && 'noScroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" href="public/img/logoPanda.webp" />
     <title>À toi, bien des années plus tard</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="public/img/logoPanda.webp" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body>
-    <div class="header">   
-        <h1><pre>
-    À toi,
-    bien des 
-    années 
-    plus tard   </pre></h1>
-    <a href="index.html"><img src="public/img/logoPanda.webp" alt="image" class="logo"/></a>
-    <a href="menu.html"><img src="public/img/menu-open.webp" alt="image" class="menu-open"/></a>
-    </div class="header">
-
-    <br>
-
-<div class="accueil">
-    <div class="article">
-        <a href="articlefilm.html">
-        <img src="public/img/imagefilm.webp" alt="image" class="imagearticle" />
-        <div class="texte-droite">
-        <p>Comment un panda avec un gros ventre mou peut-il devenir le sauveur de la Chine ?</p></div>
-        <br>
-        <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique</p>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="public/img/logoPanda.webp" alt="logo">
+        </a>
+        <a class="langue" href="#">EN</a>
+        <div @click="menuIsOpen = ! menuIsOpen">
+            <img class="hamburger" src="public/img/menu-open.webp" alt="menu">
         </div>
-    </div>
-    <br>
-
-    <div class="article--right">
-        <a href="articlelivre.html">
-        <img src="public/img/imagelivre.webp" alt="image" class="imagearticle--right" />
-        <p class="txtblanc">Des images et des interviews inédites, le tout dans 325 pages fantastiques</p>
+        <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+            <div class="menu__overlay">
+                <a href="/">
+                    <img class="logo" src="public/img/logoPanda.webp" alt="logo">
+                </a>
+                <div @click="menuIsOpen = ! menuIsOpen">
+                    <img class="cross" src="public/img/cross.webp" alt="menu">
+                </div>
+            </div>
+            <ul class="menu__link">
+                <li> <a href="index.html">Accueil</a>  </li>
+                <li> <a href="articlefilm.html">Kung Fu Panda</a>  </li>
+                <li> <a href="articlelivre.html">Tout l'art de Dreamworks Animation</a>  </li>
+                <li> <a href="articlemusique.html">"Si facile" Casseurs Flowters</a>  </li>
+                <li> <a href="articlelieu.html">Le Palais Impérial de Pékin</a>  </li>
+                <li> <a href="articleregret.html">Le regret</a>  </li>
+                <li> <a href="articleespoir.html">L'espoir</a>  </li>
+            </ul>
+        </nav>
+    </header>
+    <a>À toi, bien des années plus tard </a>
+    <div class="accueil">
+        <div class="article">
+            <a href="articlefilm.html">
+            <img src="public/img/imagefilm.webp" alt="image" class="imagearticle" />
+            <div class="texte-droite">
+            <p>Comment un panda avec un gros ventre mou peut-il devenir le sauveur de la Chine ?</p></div>
             <br>
-        <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
-    </div>
-    <br>
-
-    <div class="article">
-      <a href="articlemusique.html">
-        <img src="public/img/imagemusique.webp" alt="image" class="imagearticle" />
-        <div class="txt-article">
-        <p>Pourquoi est ce que tu reussirais là où les autres échouent ?</p>
-            <br>
-        <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+            <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique</p>
+            </div>
         </div>
-    </a>
-    </div>
-    <br>
-
-    <div class="article--right">
-        <a href="articlelieu.html">
-        <img src="public/img/imagelieu.webp" alt="image" class="imagearticle--right" />
-        <p class="txtblanc">Le Palais impérial de Pékin, une Cité interdite en pleine ville touristique</p>
-            <br>
-        <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
-    </div>
-    <br>
-
-    <div class="article">
-        <a href="articleregret.html">
-        <img src="public/img/imageregret.webp" alt="image" class="imagearticle" />
-        <div class="txt-article">
-        <p>Depuis 2019, les salles sombres sont vides de monde, quelles en sont les raisons?</p>
-            <br>
-        <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
-        </div>
-    </div>
-    <br>
+        
     
-    <div class="article--right">
-        <a href="articleespoir.html">
-        <img src="public/img/imageespoir.webp" alt="image" class="imagearticle--right" />
-        <p class="txtblanc">Mettre une image en mouvement, ce n’est pas toujours si simple ...</p>
-            <br>
-        <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
-    </div>
-</div>
-    <br>
-
-    <div class="footer">
-        <ul>   
-            <li><a class="cliquez" href="filmographie.html">Contact</li>
-            <li><a class="cliquez" href="filmographie.html">À propos</li>
-            <li><a class="cliquez" href="filmographie.html">Autres projets</li>
-            <li><a class="cliquez" href="filmographie.html">Glossaire</li>
-            <li><a class="cliquez" href="http://mmimontbeliard.com">Projet réalisé dans le cadre d’un exercice
-                pédagogique au département MMI de
-                Montbéliard</a></li>
-    </ul>
+        <div class="article--right">
+            <a href="articlelivre.html">
+            <img src="public/img/imagelivre.webp" alt="image" class="imagearticle--right" />
+            <p class="txtblanc">Des images et des interviews inédites, le tout dans 325 pages fantastiques</p>
+                <br>
+            <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+        </div>
+       
+    
+        <div class="article">
+          <a href="articlemusique.html">
+            <img src="public/img/imagemusique.webp" alt="image" class="imagearticle" />
+            <div class="txt-article">
+            <p>Pourquoi est ce que tu reussirais là où les autres échouent ?</p>
+                <br>
+            <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+            </div>
+        </a>
+        </div>
+        
+    
+        <div class="article--right">
+            <a href="articlelieu.html">
+            <img src="public/img/imagelieu.webp" alt="image" class="imagearticle--right" />
+            <p class="txtblanc">Le Palais impérial de Pékin, une Cité interdite en pleine ville touristique</p>
+                <br>
+            <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+        </div>
+        
+    
+        <div class="article">
+            <a href="articleregret.html">
+            <img src="public/img/imageregret.webp" alt="image" class="imagearticle" />
+            <div class="txt-article">
+            <p>Depuis 2019, les salles sombres sont vides de monde, quelles en sont les raisons?</p>
+                <br>
+            <p><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+            </div>
+        </div>
+        
+        
+        <div class="article--right">
+            <a href="articleespoir.html">
+            <img src="public/img/imageespoir.webp" alt="image" class="imagearticle--right" />
+            <p class="txtblanc">Mettre une image en mouvement, ce n’est pas toujours si simple ...</p>
+                <br>
+            <p class="txtblanc"><pre-clique>Pour lire l'article, cliquez ici</pre-clique></p>
+        </div>
+        <footer>
+          
+        </footer>
     </div>
 </body>
 </html>
