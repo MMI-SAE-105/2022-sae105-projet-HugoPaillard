@@ -96,47 +96,6 @@ pre-clique {
     border: 3px solid white;
 }
 
-.lienContact {
-    background-color: black;
-    color: white;
-    font-size: auto;
-    width: 300px;
-    height: auto;
-   
-}
-
-.lienApropos {
-    background-color: black;
-    color: white;
-    font-size: auto;
-    width: 300px;
-    height: auto;
-}
-
-.lienAutresprojets {
-    background-color: black;
-    color: white;
-    font-size: auto;
-    width: 300px;
-    height: auto;
-}
-
-.lienGlossaire {
-    background-color: black;
-    color: white;
-    font-size: auto;
-    width: 300px;
-    height: auto;
-}
-
-.lienMMi {
-    background-color: black;
-    color: white;
-    font-size: auto;
-    width: 300px;
-    height: auto;
-}
-
 a {
     color: black;
     text-decoration: none;
