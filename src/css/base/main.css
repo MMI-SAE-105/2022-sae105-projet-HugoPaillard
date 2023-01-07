@@ -178,3 +178,8 @@ a {
     text-decoration: bold;
 }
 
+.txttitre {
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
