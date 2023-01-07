@@ -145,17 +145,20 @@ a {
     float: left;
     height: 50px;
     width: 50px;
+    margin: 10px;
 }
 
 .droite {
     float: right;
     height: 50px;
     width: 50px;
+    margin: 10px;
 }
 
 .texte1 {
     color: white;
     font-size: 12px;
+    margin: 10px;
 }
 
 .cliquez {
@@ -182,4 +185,11 @@ a {
     text-align: center;
     color: white;
     margin: 10px;
+    text-decoration: underline;
 }
+
+.legende {
+    font-style: italic;
+    font-size: 10px;
+}
+
