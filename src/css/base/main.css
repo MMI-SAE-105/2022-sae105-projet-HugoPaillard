@@ -6,6 +6,7 @@ body {
 
 li {
     list-style: none;
+    color: white;
 }
 
 pre {
@@ -185,7 +186,8 @@ a {
     text-align: center;
     color: white;
     margin: 10px;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .legende {
@@ -298,4 +300,10 @@ a {
     font-size: 20px;
     color: white;
     text-decoration: none;
+}
+
+.redirection {
+    font-size: 15px;
+    color: white;
+    text-decoration: underline;
 }
