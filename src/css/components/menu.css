@@ -23,7 +23,7 @@
 }
 
 .menu__link li {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     text-align: center;
     border-top: 3px solid var(--couleur--projet-5);
