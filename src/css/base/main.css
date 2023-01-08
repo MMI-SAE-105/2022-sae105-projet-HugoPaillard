@@ -283,3 +283,21 @@ a {
     height: 20px;
     margin: 10px;
 }
+
+form {
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+  }
+  input, label {
+    display: block;
+    margin: 10px 0;
+    
+  }
+
+  input, .envoyer {
+    background-color: #A02F27;
+	border: 3px solid #F0BB48;
+    color: white;
+  }
+
