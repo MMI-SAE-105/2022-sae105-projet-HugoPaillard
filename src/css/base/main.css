@@ -296,3 +296,28 @@ video {
     width: 100%;
     height: auto;
 }
+
+.frise {
+    text-align: center;
+}
+
+.flechefrise {
+    float: right;
+    height: 1200px;
+}
+
+.photofrise {
+    width: auto;
+    height: 125px;
+    margin: 10px;
+}
+
+.txtfrise {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.ligne {
+    color: white;
+    text-align: center;
+}

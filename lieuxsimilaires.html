@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À toi, bien des années plus tard</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="icon" href="/public/img/logoPanda.webp" />
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="public/img/logoPanda.webp" />
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="/public/img/logoPanda.webp" alt="logo">
+            <img class="logo" src="public/img/logoPanda.webp" alt="logo">
         </a>
         <a class="langue" href="ENlieuxsimilaires.html">EN</a>
         <div @click="menuIsOpen = ! menuIsOpen">
-            <img class="hamburger" src="/public/img/menu-open.webp" alt="menu">
+            <img class="hamburger" src="public/img/menu-open.webp" alt="menu">
         </div>
         <nav x-show="menuIsOpen" x-transition.duration.800ms class="menu">
             <div class="menu__overlay">
                 <a href="index.html">
-                    <img class="logo" src="/public/img/logoPanda.webp" alt="logo">
+                    <img class="logo" src="public/img/logoPanda.webp" alt="logo">
                 </a>
                 <div @click="menuIsOpen = ! menuIsOpen">
-                    <img class="cross" src="/public/img/cross.webp" alt="menu">
+                    <img class="cross" src="public/img/cross.webp" alt="menu">
                 </div>
             </div>
             <ul class="menu__link">
@@ -40,6 +40,50 @@
         </nav>
     </header>
 
+    <img src="public/img/frise.webp" alt="image" class="flechefrise" />
+
+    <div class="accueil">
+        <div class="frise">
+            <img src="public/img/RoiMu.webp" alt="image" class="photofrise" />
+            <div class="texte-droite">
+            <a class="txtfrise"><h3>Palais du Roi Mu</h3></a>
+            <a class="txtfrise"><h3>1442</h3></a>
+            </div>
+        </div>
+        
+    
+        <div class="frise">
+            <img src="public/img/Shenyang.webp" alt="image" class="photofrise" />
+            <a class="txtfrise"><h3>Palais de Shenyang (Mukden)</h3></a>
+            <a class="txtfrise"><h3>1625</h3></a>
+        </div>
+       
+    
+        <div class="frise">
+            <img src="public/img/Tokyo.webp" alt="image" class="photofrise" />
+            <div class="txt-article">
+                <a class="txtfrise"><h3>Palais Impérial de Tokyo</h3></a>
+                <a class="txtfrise"><h3>1869</h3></a>
+            </div>
+        </a>
+        </div>
+        
+    
+        <div class="frise">
+            <img src="public/img/FacteurCheval.webp" alt="image" class="photofrise" />
+            <a class="txtfrise"><h3>Palais idéal du Facteur Cheval</h3></a>
+            <a class="txtfrise"><h3>1912</h3></a>
+        </div>
+        
+    
+        <div class="frise">
+            <img src="public/img/Jade.webp" alt="image" class="photofrise" />
+            <div class="txt-article">
+            <a class="txtfrise"><h3>Palais de Jade</h3></a>
+            <a class="txtfrise"><h3>2008</h3></a>
+            </div>
+        </div>
+<div class="ligne"><h2>______________________________</h2></div>
     <footer>
         <ul>   
             <li><a class="cliquez" href="contact.html">Contact</li>
