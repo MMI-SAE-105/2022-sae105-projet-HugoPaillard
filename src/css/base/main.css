@@ -156,40 +156,25 @@ a {
     font-size: 10px;
 }
 
-#carousel {
-    width: 500px;
-    height: 300px;
+.carousel-container {
+    display: flex;
     overflow: hidden;
-    white-space: nowrap;
+  }
+
+  .carousel-item {
     position: relative;
+    left: 0;
   }
   
-  .slide {
-    display: inline-block;
-    width: 500px;
-    height: 300px;
-  }
-
-  @keyframes slide {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-500px);
-    }
+  .carousel-item.is-moved-left {
+    left: -100%;
   }
   
-  .slide {
-    animation: slide 20s infinite;
+  .carousel-item.is-moved-right {
+    left: 100%;
   }
 
-  .filmo1 {
-    margin: 10px;
-    height: 167.5px;
-    width: 125px; 
-    float: center;
-  }
-
+ 
   .phrase{
     
     height: 60px;
@@ -305,4 +290,9 @@ form {
 
 .envoyer {
     margin-top: 10px;
+}
+
+video {
+    width: 100%;
+    height: auto;
 }
