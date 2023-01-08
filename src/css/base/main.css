@@ -207,7 +207,8 @@ a {
 
 .fleche {
     width: auto;
-    height: 10px;
+    height: 15px;
+    
 }
 
 .suivant {
@@ -216,6 +217,16 @@ a {
     margin: 10px;
     text-decoration: underline;
     font-style: italic;
+    float: right;
+}
+
+.precedant {
+    color: white;
+    font-size: 10px;
+    margin: 10px;
+    text-decoration: underline;
+    font-style: italic;
+    float: left;
 }
 
 .projets {
